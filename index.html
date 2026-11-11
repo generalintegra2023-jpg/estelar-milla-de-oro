@@ -277,7 +277,7 @@
         <div class="row"><span>Voc / Isc</span><b>49,25 V / 16,40 A</b></div>
         <div class="row"><span>Dimensiones / peso</span><b>2.382 × 1.134 × 30 mm · 32,5 kg</b></div>
         <div class="row"><span>Máx. voltaje del sistema</span><b>1.500 Vcc</b></div>
-        <div class="row"><span>Garantía</span><b>15 años producto · 30 años potencia lineal</b></div>
+        <div class="row"><span>Garantía</span><b>12–15 años producto · 25–30 años potencia</b></div>
       </div>
       <div class="col"><h4>Inversor <em>SolaX trifásico</em></h4>
         <div class="row"><span>Modelo</span><b>SolaX trifásico · 50 kW</b></div>
@@ -290,7 +290,7 @@
       </div>
     </div>
     <p class="lead" style="margin-top:16px">Protecciones integradas anti-isla, sobretensiones (SPD) y arranque automático. Resistentes a condiciones climáticas extremas.</p>
-    <p style="margin-top:10px;font-size:11px;color:var(--faint)">Fuente: ficha técnica Connera CO-645BFC-1.0. Los años de garantía corresponden a la serie BFC según el distribuidor y se ratifican en el certificado del lote suministrado.</p>
+    <p style="margin-top:10px;font-size:11px;color:var(--faint)">Especificaciones de referencia: ficha técnica Connera CO-645BFC-1.0. Rango de garantías según las marcas que podrían suministrarse (LONGi, Trina Solar, JA Solar, Connera y similares); se ratifica con el certificado del fabricante del lote.</p>
   </section>
 
   <!-- 6 ANALISIS -->
@@ -304,18 +304,20 @@
         <div class="row"><span>Inversor</span><b>1 × SolaX trifásico 50 kW</b></div>
         <div class="row"><span>Producción</span><b>71.332 kWh/año</b></div>
         <div class="row"><span>Consumo del hotel</span><b>48.072 kWh/mes</b></div>
-        <div class="row"><span>Inversión proyecto solar</span><b>$ 322.814.299</b></div>
-      </div>
-      <div class="col"><h4>Resultados <em>sin / con Ley 1715 (est.)</em></h4>
-        <div class="row"><span>Ahorro año 1</span><b>$ 55.902.763</b></div>
-        <div class="row"><span>TIR a 25 años</span><b>21,0 % / 21,7 %</b></div>
-        <div class="row"><span>Payback simple</span><b>5,5 / 5,3 años</b></div>
-        <div class="row"><span>VPN (12 %)</span><b>$ 293.016.526</b></div>
-        <div class="row"><span>Beneficio neto 25 años</span><b>$ 2.317.960.400</b></div>
         <div class="row"><span>Cobertura del consumo</span><b>12,4 %</b></div>
       </div>
+      <div class="col"><h4>Inversión y resultados <em>sin / con Ley 1715 (est.)</em></h4>
+        <div class="row"><span>Proyecto solar</span><b>$ 322.814.299</b></div>
+        <div class="row"><span>Estructura adicional (aliado)</span><b>$ 86.500.000</b></div>
+        <div class="row"><span>Inversión total</span><b>$ 409.314.299</b></div>
+        <div class="row"><span>TIR a 25 años</span><b>17,2 % / 18,0 %</b></div>
+        <div class="row"><span>Payback simple</span><b>6,8 / 6,4 años</b></div>
+        <div class="row"><span>VPN (12 %)</span><b>$ 206.516.526</b></div>
+        <div class="row"><span>Beneficio neto 25 años</span><b>$ 2.231.460.400</b></div>
+      </div>
     </div>
-    <p class="lead" style="margin-top:18px">Sistema trifásico con autoconsumo prioritario: la energía generada se consume dentro del hotel y reduce la factura al precio pleno de la red ($783,70/kWh todo incluido). El valor corresponde al proyecto solar llave en mano, sin estructura adicional.</p>
+    <p class="lead" style="margin-top:18px">Sistema trifásico con autoconsumo prioritario: la energía generada se consume dentro del hotel y reduce la factura al precio pleno de la red ($783,70/kWh todo incluido). La estructura adicional sin perforar la ejecuta un aliado y se muestra por separado; todos los indicadores se calculan sobre la inversión total.</p>
+    <p style="margin-top:10px;font-size:11px;color:var(--faint)">Precio de bolsa de energía (XM): $275,5/kWh, promedio ponderado al 8 de noviembre de 2026 (promedio 31 días: $510,0/kWh; precio de contratos: $329,3/kWh). El ahorro se valora a la tarifa de la factura; el precio de bolsa solo afectaría a eventuales excedentes, que en este diseño son nulos.</p>
   </section>
 
   <!-- 7 SIMULADOR -->
@@ -329,7 +331,7 @@
         <div class="tabs" id="tabs" style="display:none"></div>
       </div>
       <div class="simcard">
-        <div class="fixed-inv"><span>Inversión del proyecto</span><b id="vPrecio">—</b></div>
+        <div class="fixed-inv"><span>Inversión total</span><b id="vPrecio">—</b></div>
         <div class="ctl"><div class="r"><label>Tarifa de energía</label><span class="num" id="lTarifa"></span></div><input type="range" id="sTarifa" step="0.1"><div class="hint">Mínimo = tarifa actual de la factura. La energía solo tiende a subir.</div></div>
         <div class="ctl"><div class="r"><label>Radiación solar (HSP)</label><span class="num" id="lHsp"></span></div><input type="range" id="sHsp" min="3.4" max="5.2" step="0.1"></div>
         <div class="ctl"><div class="r"><label>Escalación tarifaria anual</label><span class="num" id="lEsc"></span></div><input type="range" id="sEsc" min="0" max="10" step="0.5"></div>
@@ -379,9 +381,9 @@
     <div class="eyebrow"><span class="pips"><i></i><i></i><i></i></span>Componentes del sistema</div>
     <h2 class="head">Sistema completo, llave en mano</h2>
     <div class="cardgrid g3">
-      <div class="pcard"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18M3 13.5h18M9 4v14M15 4v14"/></svg></div><h3>Paneles solares</h3><div class="meta">96 módulos Connera 645 Wp bifaciales tipo N · eficiencia 23,88 % · garantía de producto 15 años y de potencia lineal 30 años.</div></div>
+      <div class="pcard"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M3 9h18M3 13.5h18M9 4v14M15 4v14"/></svg></div><h3>Paneles solares</h3><div class="meta">96 módulos Connera 645 Wp bifaciales tipo N · eficiencia 23,88 % · garantía de producto 12 a 15 años y de potencia lineal 25 a 30 años, según la marca.</div></div>
       <div class="pcard"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M10 16h4"/></svg></div><h3>Inversor trifásico</h3><div class="meta">SolaX 50 kW · &gt;98 % eficiencia · monitoreo remoto · anti-isla, DPS y arranque automático.</div></div>
-      <div class="pcard"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2v6m0 0l3-3m-3 3L9 5M5 12h14l-1 9H6z"/></svg></div><h3>Estructura y montaje</h3><div class="meta">Estructura de fijación de los paneles incluida en el proyecto solar.</div></div>
+      <div class="pcard"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2v6m0 0l3-3m-3 3L9 5M5 12h14l-1 9H6z"/></svg></div><h3>Estructura y montaje</h3><div class="meta">Estructura de soporte de los paneles más estructura adicional diseñada para no perforar la edificación existente.</div></div>
       <div class="pcard"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 2L4 7v6c0 5 8 9 8 9s8-4 8-9V7z"/></svg></div><h3>Protecciones</h3><div class="meta">Cableado DC/AC certificado · breakers y fusibles · puesta a tierra · DPS contra sobretensiones · tableros certificados.</div></div>
       <div class="pcard"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 20v-6M8 20v-3M16 20v-9M4 4h16v16"/></svg></div><h3>Monitoreo remoto</h3><div class="meta">Plataforma web y app móvil · seguimiento diario de generación, consumo y estado del sistema.</div></div>
       <div class="pcard"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg></div><h3>Canalización y BoS</h3><div class="meta">Bandejas y conductos certificados · accesorios DC/AC · ingeniería, puesta en marcha y capacitación.</div></div>
@@ -441,7 +443,7 @@
     <h2 class="head">Respaldo de principio a fin</h2>
     <div class="cardgrid g4">
       <div class="pcard"><div class="tag">Ingeniería</div><div class="meta" style="margin-top:8px">Documentación, dirección de obra, pruebas, puesta en marcha y coordinación SST.</div></div>
-      <div class="pcard"><div class="tag">Garantías</div><div class="meta" style="margin-top:8px">Paneles: producto 15 años, potencia lineal 30 años · inversor 5 años (ampliable a 10) · instalación 1 año.</div></div>
+      <div class="pcard"><div class="tag">Garantías</div><div class="meta" style="margin-top:8px">Paneles: producto 12 a 15 años, potencia lineal 25 a 30 años · inversor 5 años (ampliable a 10) · instalación 1 año.</div></div>
       <div class="pcard"><div class="tag">Trámites</div><div class="meta" style="margin-top:8px">Trámite AGPE ante EPM, certificación RETIE, registro CREG y UPME.</div></div>
       <div class="pcard"><div class="tag">Monitoreo</div><div class="meta" style="margin-top:8px">Plataforma SolaX Cloud · seguimiento remoto de generación y estado del sistema.</div></div>
     </div>
@@ -452,7 +454,7 @@
         <div class="row"><span>CREG 174/2021</span><b>AGPE y generación distribuida</b></div>
       </div>
       <div class="col"><h4>No incluido</h4>
-        <div class="row"><span>Estructural</span><b>Refuerzos de la edificación existente</b></div>
+        <div class="row"><span>Estructura adicional</span><b>Aliado, contratada por separado</b></div>
         <div class="row"><span>Obras civiles</span><b>Por cuenta del cliente</b></div>
         <div class="row"><span>Medidor bidireccional</span><b>Costo del operador de red</b></div>
       </div>
@@ -568,7 +570,7 @@ document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',
 
 /* SIMULADOR */
 const C={PR:0.80,deg:0.005,disc:0.12,N:25,tax:0.35,oymKwp:70000,oymEsc:0.05,co2:0.164};
-const P={estelar:{name:"Hotel Estelar Milla de Oro",kwp:61.92,hsp:4.0,tarifa:783.7,precio:322814299,consumo:48072}};
+const P={estelar:{name:"Hotel Estelar Milla de Oro",kwp:61.92,hsp:4.0,tarifa:783.7,precio:409314299,consumo:48072}};
 let cur="estelar",S={};
 function loadP(k){cur=k;const p=P[k];S={tarifa:p.tarifa,hsp:p.hsp,esc:6,ley:false};
   const st=document.getElementById('sTarifa');st.min=p.tarifa;st.max=Math.round(p.tarifa*1.8);st.value=p.tarifa;
